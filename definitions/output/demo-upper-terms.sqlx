@@ -1,0 +1,18 @@
+config {
+    type: "table",
+    description: "This is a kumoben demo table.",
+    tags: [`${constants.DEMO_TAG}`]
+}
+
+
+SELECT
+    ${ref("demo-table")}.term,
+    rank,
+    term_in_jp
+FROM
+    ${ref("demo-table")}, UNNEST(${ref("demo-table")}.x)
+LEFT JOIN ${ref("demo-table-translate")}
+  ON ${ref("demo-table")}.term = ${ref("demo-table-translate")}.term
+WHERE
+    rank <= 10
+ORDER BY rank

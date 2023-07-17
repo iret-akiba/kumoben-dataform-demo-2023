@@ -1,0 +1,8 @@
+{
+  "defaultSchema": "kumoben_dataform_demo",
+  "assertionSchema": "dataform_assertions",
+  "warehouse": "bigquery",
+  "defaultDatabase": "clp-cloudpack-ci-dev2-section",
+  "defaultLocation": "US"
+}
+    

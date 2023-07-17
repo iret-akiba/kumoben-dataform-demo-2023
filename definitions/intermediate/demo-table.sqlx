@@ -1,0 +1,29 @@
+config {
+    type: "table",
+    description: "This is a kumoben demo table.",
+    tags: [`${constants.DEMO_TAG}`],
+    assertions: {
+        nonNull: ["term", "x"],
+        rowConditions: [
+            `length(term) < 50`
+        ]
+    }
+}
+
+SELECT
+    term,
+    ARRAY_AGG(STRUCT(rank,week) ORDER BY week DESC LIMIT 1) x
+FROM
+    `${constants.GOOGLE_TRENDS}.top_terms`
+　WHERE
+    refresh_date = 
+    (
+    SELECT
+        MAX(refresh_date)
+    FROM
+        `${constants.GOOGLE_TRENDS}.top_terms`
+    )
+GROUP BY
+    term
+ORDER BY
+    (SELECT rank FROM UNNEST(x))

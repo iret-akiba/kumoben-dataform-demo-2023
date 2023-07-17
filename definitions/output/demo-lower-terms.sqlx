@@ -1,0 +1,15 @@
+config {
+    type: "table",
+    description: "This is a kumoben demo table.",
+    tags: [`${constants.DEMO_TAG}`]
+}
+
+
+SELECT
+    term,
+    rank
+FROM
+    ${ref("demo-table")}, UNNEST(${ref("demo-table")}.x)
+　WHERE
+    rank > 10
+ORDER BY rank

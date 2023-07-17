@@ -1,0 +1,25 @@
+config {
+    type: "table",
+    description: "This is a kumoben demo table.",
+    tags: [`${constants.JS_DEMO_TAG}`]
+}
+
+SELECT
+    term,
+    dma_name,
+    ${functions.getStateAbbreviation("dma_name")} state_abr,
+    ARRAY_AGG(STRUCT(rank,week) ORDER BY week DESC LIMIT 1) x
+FROM
+    `${constants.GOOGLE_TRENDS}.top_terms`
+　WHERE
+    refresh_date = 
+    (
+    SELECT
+        MAX(refresh_date)
+    FROM
+        `${constants.GOOGLE_TRENDS}.top_terms`
+    )
+GROUP BY
+    term, dma_name
+ORDER BY
+    (SELECT rank FROM UNNEST(x))

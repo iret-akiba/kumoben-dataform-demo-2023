@@ -1,0 +1,136 @@
+config {
+    type: "table",
+    tags: [`${constants.DEMO_TAG}`]
+}
+
+SELECT
+  "Taylor Swift" AS term,
+  "テイラー・スウィフト" as term_in_jp
+UNION ALL
+SELECT
+  "Wembanyama" AS term,
+  "ウェンバンヤマ" as term_in_jp
+UNION ALL
+SELECT
+  "Andy Murray" AS term,
+  "アンディ・マレー" as term_in_jp
+UNION ALL
+SELECT
+  "Bob Marley" AS term,
+  "ボブ・マーリー" as term_in_jp
+UNION ALL
+SELECT
+  "Tom Brady" AS term,
+  "トム・ブラッディ" as term_in_jp
+UNION ALL
+SELECT
+  "Leqembi" AS term,
+  "レケンビ" as term_in_jp
+  UNION ALL
+SELECT
+  "Jennifer Aniston" AS term,
+  "ジェニファー・アニストン" as term_in_jp
+UNION ALL
+SELECT
+  "Lincoln Lawyer" AS term,
+  "リンカーン弁護士" as term_in_jp
+UNION ALL
+SELECT
+  "Ricky Martin" AS term,
+  "リッキー・マーティン" as term_in_jp
+UNION ALL
+SELECT
+  "National Fried Chicken Day" AS term,
+  "全国フライドチキンの日" as term_in_jp
+UNION ALL
+SELECT
+  "Ron DeSantis" AS term,
+  "ロン・デサンティス" as term_in_jp
+UNION ALL
+SELECT
+  "Diablo 4 Season 1" AS term,
+  "ディアブロ 4 シーズン 1" as term_in_jp
+UNION ALL
+SELECT
+  "2K24" AS term,
+  "2K24" as term_in_jp
+UNION ALL
+SELECT
+  "Kevin Hart" AS term,
+  "ケヴィン・ハート" as term_in_jp
+UNION ALL
+SELECT
+  "Matisse Thybulle" AS term,
+  "マティス・サイビュル" as term_in_jp
+UNION ALL
+SELECT
+  "Threads" AS term,
+  "Threads" as term_in_jp
+UNION ALL
+SELECT
+  "Hong Kong singer Coco Lee" AS term,
+  "香港歌手ココ・リー" as term_in_jp
+UNION ALL
+SELECT
+  "Keke Palmer" AS term,
+  "キキ・パーマー" as term_in_jp
+UNION ALL
+SELECT
+  "Rudy Farias" AS term,
+  "ルディ・ファリアス" as term_in_jp
+UNION ALL
+SELECT
+  "Insidious: The Red Door" AS term,
+  "インシディアス：赤い扉" as term_in_jp
+UNION ALL
+SELECT
+  "Grant Williams" AS term,
+  "グラント・ウィリアムズ" as term_in_jp
+UNION ALL
+SELECT
+  "Killers of the Flower Moon" AS term,
+  "フラワームーンの殺人者たち" as term_in_jp
+UNION ALL
+SELECT
+  "Jujutsu Kaisen season 2" AS term,
+  "呪術廻戦シーズン 2" as term_in_jp
+UNION ALL
+SELECT
+  "UPS strike" AS term,
+  "UPSストライキ" as term_in_jp
+UNION ALL
+SELECT
+  "Florida ron desantis" AS term,
+  "フロリダのロン・デサンティス" as term_in_jp
+UNION ALL
+SELECT
+  "NBA Summer League" AS term,
+  "NBAサマーリーグ" as term_in_jp
+UNION ALL
+SELECT
+  "Nikki McCray" AS term,
+  "ニッキー・マックレー" as term_in_jp
+UNION ALL
+SELECT
+  "My Adventures with Superman" AS term,
+  "スーパーマンとの冒険" as term_in_jp
+UNION ALL
+SELECT
+  "John Mayer" AS term,
+  "ジョン・メイヤー" as term_in_jp
+UNION ALL
+SELECT
+  "Jimmy Carter" AS term,
+  "ジミー・カーター" as term_in_jp
+UNION ALL
+SELECT
+  "Taylor Swift Kansas City" AS term,
+  "テイラー・スウィフト カンザス・シティ" as term_in_jp
+UNION ALL
+SELECT
+  "Cluster Munitions" AS term,
+  "クラスター弾" as term_in_jp
+UNION ALL
+SELECT
+  "Britney Spears" AS term,
+  "ブリトニー・スピアーズ" as term_in_jp

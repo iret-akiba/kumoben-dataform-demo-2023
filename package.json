@@ -1,0 +1,6 @@
+{
+  "name": "akiba-kumoben-test",
+  "dependencies": {
+    "@dataform/core": "2.4.2"
+  }
+}
