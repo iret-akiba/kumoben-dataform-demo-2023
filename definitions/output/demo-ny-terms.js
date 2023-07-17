@@ -12,7 +12,7 @@ stateNames.forEach(stateName => {
   FROM
     ${ctx.ref("demo-table-2")}, UNNEST(${ctx.ref("demo-table-2")}.x)
 　  WHERE
-    ${functions.getStateAbbreviation("dma_name")} = stateName
+    ${functions.getStateAbbreviation("dma_name")} = "${stateName}"
   GROUP BY
     term, rank, ${functions.getStateAbbreviation("dma_name")}
   ORDER BY
